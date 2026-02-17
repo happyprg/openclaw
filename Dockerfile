@@ -1,4 +1,5 @@
 FROM alpine/openclaw:latest
+LABEL com.centurylinklabs.watchtower.enable="true"
 
 USER root
 
