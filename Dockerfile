@@ -12,8 +12,6 @@ RUN pip3 install --no-cache-dir --break-system-packages google-api-python-client
 
 # Install Gemini CLI globally
 RUN npm install -g @google/gemini-cli
-# Install OpenClaw globally
-RUN npm install -g openclaw@latest
 
 # 최종 사용자를 node로 변경합니다.
 USER node
