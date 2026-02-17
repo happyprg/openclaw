@@ -7,7 +7,7 @@ USER root
 RUN apt-get update && apt-get install -y python3 python3-pip vim
 
 # pip를 이용해 Google API 관련 라이브러리를 설치합니다.
-RUN pip3 install --no-cache-dir google-api-python-client google-auth-oauthlib google-auth-httplib2
+RUN pip3 install --no-cache-dir --break-system-packages google-api-python-client google-auth-oauthlib google-auth-httplib2
 
 # 최종 사용자를 node로 변경합니다.
 USER node
