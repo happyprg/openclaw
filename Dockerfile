@@ -1,6 +1,8 @@
 FROM alpine/openclaw:latest
 LABEL com.centurylinklabs.watchtower.enable="true"
 
+WORKDIR /app
+
 USER root
 
 # alpine/openclaw:latest 이미지의 패키지 매니저는 apt가 아닌 apk입니다.
